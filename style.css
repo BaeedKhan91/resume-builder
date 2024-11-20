@@ -1,0 +1,103 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #918d8d;
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  gap: 40px; /* Gap between left and right sections */
+  width: 80%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Padding inside the container */
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between sections */
+}
+
+.section h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between label and input */
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold; /* Bold labels */
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px;
+}
+
+.add-button, .remove-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Reduced button size */
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-button:hover, .remove-button:hover {
+  background-color: #0056b3;
+}
+
+.remove-button {
+  background-color: #dc3545; /* Red color for Remove button */
+}
+
+.remove-button:hover {
+  background-color: #a71d2a;
+}
+
+/* Additional Spacing for Right Side */
+#workExperienceContainer,
+#academicContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Added more gap between dynamic fields */
+}
+
+.section:last-child .form-group {
+  margin-bottom: 20px; /* Extra bottom margin between right-side sections */
+}

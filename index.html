@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="form-container">
+    <!-- Left Side -->
+    <div class="section">
+      <!-- Personal Information -->
+      <div>
+        <h2>Personal Information</h2>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" placeholder="Enter your first name" />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" placeholder="Enter your last name" />
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea id="address" rows="3" placeholder="Enter your address"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" placeholder="Enter your phone number" />
+        </div>
+      </div>
+
+      <!-- Important Links -->
+      <div>
+        <h2>Important Links</h2>
+        <div class="form-group">
+          <label for="facebook">Facebook Profile Link</label>
+          <input type="url" id="facebook" placeholder="Enter Facebook URL" />
+        </div>
+        <div class="form-group">
+          <label for="linkedin">LinkedIn Profile Link</label>
+          <input type="url" id="linkedin" placeholder="Enter LinkedIn URL" />
+        </div>
+        <div class="form-group">
+          <label for="github">GitHub Profile Link</label>
+          <input type="url" id="github" placeholder="Enter GitHub URL" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="section">
+      <h2>Professional Information</h2>
+
+      <!-- Objective -->
+      <div class="form-group">
+        <label for="objective">Objective</label>
+        <textarea id="objective" rows="3" placeholder="Enter your objective"></textarea>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="form-group">
+        <label>Work Experience</label>
+        <div id="workExperienceContainer">
+          <textarea rows="3" placeholder="Enter here"></textarea>
+        </div>
+        <div class="button-group">
+          <button class="add-button" onclick="addWorkExperience()">Add</button>
+          <button class="remove-button" onclick="removeWorkExperience()">Remove</button>
+        </div>
+      </div>
+
+      <!-- Academic Qualification -->
+      <div class="form-group">
+        <label>Academic Qualification</label>
+        <div id="academicContainer">
+          <textarea rows="3" placeholder="Enter here"></textarea>
+        </div>
+        <div class="button-group">
+          <button class="add-button" onclick="addAcademic()">Add</button>
+          <button class="remove-button" onclick="removeAcademic()">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <script src="./script.js"></script>
+
+</body>
+</html>
