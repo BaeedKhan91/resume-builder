@@ -66,6 +66,10 @@ function generateCv() {
       academicList.appendChild(li);
     }
   });
+
+  // Show the CV template and hide the form
+  document.getElementById("cv-form").classList.add("hidden");
+  document.getElementById("cv-template").classList.remove("hidden");
 }
 
 function printCV() {
